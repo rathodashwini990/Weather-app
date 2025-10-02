@@ -1,0 +1,69 @@
+@import "leaflet/dist/leaflet.css";
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.app {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+/* Top Nav Bar */
+.navbar {
+  background-color: #3c3c3c;
+  padding: 0.8rem 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #f05454;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar ul li:hover {
+  color: #f05454;
+}
+
+/* Header Banner */
+.header {
+  background: url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80")
+    no-repeat center center/cover;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.search-wrapper {
+  margin-top: 1rem;
+}
+
