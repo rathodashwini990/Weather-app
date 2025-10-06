@@ -11,7 +11,6 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
   const fetchWeather = async (searchCity) => {
     try {
       setLoading(true);
@@ -23,7 +22,7 @@ function App() {
       setCity(searchCity);
       localStorage.setItem("lastCity", searchCity);
     } catch (err) {
-      setError("City not found. Try again.",err);
+      setError("City not found. Try again.", err);
       setWeather(null);
     } finally {
       setLoading(false);
